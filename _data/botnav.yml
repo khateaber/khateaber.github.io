@@ -1,0 +1,12 @@
+- name: home
+  label: صفحه نخست
+  link: '/'
+- name: about
+  label: درباره کمپین
+  link: '/about'
+- name: schools
+  label: پروژه محدوده امن مدارس
+  link: '/schools'
+- name: shabtab
+  label: محصول شب‌تاب (چراغ همراه)
+  link: /shabtab

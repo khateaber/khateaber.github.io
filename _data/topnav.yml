@@ -11,9 +11,20 @@
 - name: projects
   label: پروژه‌ها
   link: '#'
+  subitems:
+    - name: schools
+      label: پروژه محدوده امن مدارس
+      url: /schools
+    - name: shabtab
+      label: محصول شب‌تاب (چراغ همراه)
+      url: /shabtab
 - name: resources
   label: منابع
   link: '#'
+  subitems:
+    - name: guide
+      label: راهنمای حرکت امن در کنار هم
+      url: /guide
 - name: join
   label: پیوستن
   link: '#join'
