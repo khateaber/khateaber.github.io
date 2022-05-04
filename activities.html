@@ -1,0 +1,36 @@
+---
+layout: default
+title: فعالیت‌های کمپین
+slug: /activities
+excerpt: کمپین من هم خط عابر پیاده را می‌خوانم از ۱۸ شهریور ۹۸ فعالیت‌ خود را آغاز کرد. مشروحی از فعالیت‌های کمپین از آغاز تا کنون در ادامه آمده است
+---
+<section>
+  <div class="container">
+    <div class="row text-center my-5">
+      <h1>{{page.title}}</h1>
+      <p class="lead">{{page.excerpt}}</p>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="timeline d-flex flex-column">
+      {% for post in site.posts%}
+      <div class="timeline-item">
+        <div class="card border-0">
+          <div class="card-header py-2 bg-transparent rounded-0 border-0 persianDate" data-timestamp="{{post.date | date: '%s'}}">
+          </div>
+          <a href="{{post.url}}"><img src="{{post.coverImg}}" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <a href="{{post.url}}" class="text-reset text-decoration-none"><h5 class="card-title">{{post.title}}</h5></a>
+            <p class="card-text">
+              {{post.excerpt | truncatewords: 100}}
+            </p>
+          </div>
+        </div>
+      </div>
+      {%endfor%}
+    </div>
+  </div>
+
+</section>

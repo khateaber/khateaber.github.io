@@ -14,9 +14,6 @@
 - name: resources
   label: منابع
   link: '#'
-- name: contact
-  label: تماس
-  link: /contact/
 - name: join
   label: پیوستن
   link: '#join'

@@ -22,3 +22,28 @@ layout: default
   </div>
 </section>
 {{content}}
+{%assign filteredPosts = site.posts | where: 'categories', page.slug %}
+{% if filteredPosts.size > 0 %}
+<section>
+  <div class="container my-3">
+    <div class="row text-center">
+      <h3>فعالیت‌های مرتبط</h3>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4  justify-content-md-center">
+      {%for post in filteredPosts %}
+      <div class="col">
+        <div class="card">
+          <img src="{{post.coverImg}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{post.title}}</h5>
+            <p class="card-text">
+              <span class="persianDate text-muted" data-timestamp="{{post.date | date: '%s'}}"></span><br>
+              {{post.excerpt | truncatewords:50}}</p>
+          </div>
+        </div>
+      </div>
+      {%endfor%}
+    </div>
+  </div>
+</section>
+{%endif%}
