@@ -1,0 +1,12 @@
+- name: report
+  label: گزارش فعالیت‌های کمپین (از آغاز تا کنون)
+  link: '#'
+- name: posters
+  label: پوسترهای کمپین (برای نصب در مراکز عمومی)
+  link: '#'
+- name: catalouge
+  label: بروشور معرفی کمپین
+  link: '#'
+- name: safemovement
+  label: بروشور حرکت امن در کنار هم
+  link: '#'

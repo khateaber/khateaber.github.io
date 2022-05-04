@@ -1,0 +1,22 @@
+- name: home
+  label: صفحه نخست
+  link: /
+  faClass: "bi bi-house-fill"
+- name: about
+  label: درباره
+  link: /about/
+- name: activities
+  label: فعالیت‌ها
+  link: '/activities/'
+- name: projects
+  label: پروژه‌ها
+  link: '#'
+- name: resources
+  label: منابع
+  link: '#'
+- name: contact
+  label: تماس
+  link: /contact/
+- name: join
+  label: پیوستن
+  link: '#join'

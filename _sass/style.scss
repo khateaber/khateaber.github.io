@@ -1,0 +1,151 @@
+html,body {
+  font-family: 'Vazirmatn RD';
+  font-variation-settings: "wght" 400;
+}
+h1{
+  font-variation-settings: "wght" 900;
+}
+.carousel-img{
+  background-size: cover; background-position: center;min-height: calc(100vh-85px);
+}
+.text-white-shadow{
+  text-shadow: 0px 0px 10px #000000;
+
+}
+@keyframes hide-scroll {
+  0% { overflow: hidden; }
+  100% { overflow: auto; }
+}
+
+
+.carousel-inner, .carousel, .carousel-item, .carousel-container {
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+}
+
+.carousel-item-prev:not(.carousel-item-end), .active.carousel-item-start {
+  transform: translate3d(0, -100%, 0);
+  -webkit-transform: translate3d(0, -100%, 0);
+  -moz-transform: translate3d(0, -100%, 0);
+  -ms-transform: translate3d(0, -100%, 0);
+  -o-transform: translate3d(0, -100%, 0);
+}
+
+.carousel-item-next:not(.carousel-item-start), .active.carousel-item-end {
+  transform: translate3d(0, 100%, 0);
+  -webkit-transform: translate3d(0, 100%, 0);
+  -ms-transform: translate3d(0, 100%, 0);
+  -moz-transform: translate3d(0, 100%, 0);
+  -o-transform: translate3d(0, 100%, 0);
+}
+
+.carousel-indicators {
+  top: 0;
+  margin: auto;
+  height: 20px;
+  right: 10px;
+  left: auto;
+  display: block;
+}
+
+.carousel-indicators [data-bs-target] {
+  background: none;
+  border: 2px solid white;
+  border-radius: 12px;
+  width: 12px;
+  height: 12px;
+  margin-bottom: 5px;
+}
+
+.carousel-indicators li.active {
+  background: white;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  z-index: -1;
+}
+
+.carousel-control-prev-icon {
+  top: 5%;
+}
+
+.unclickable {
+  pointer-events: none;
+}
+
+.clickable {
+  pointer-events: all;
+}
+
+ @-webkit-keyframes roll-in-blurred-right {
+  0% {
+    -webkit-transform: translateX(1000px) rotate(720deg);
+            transform: translateX(1000px) rotate(720deg);
+    -webkit-filter: blur(50px);
+            filter: blur(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+            transform: translateX(0) rotate(0deg);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes roll-in-blurred-right {
+  0% {
+    -webkit-transform: translateX(1000px) rotate(720deg);
+            transform: translateX(1000px) rotate(720deg);
+    -webkit-filter: blur(50px);
+            filter: blur(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+            transform: translateX(0) rotate(0deg);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+.footer{
+  .links{
+    ul {list-style-type: none;}
+    li a{
+      color: white;
+      transition: color .2s;
+      text-decoration: none;
+      &:hover{
+        text-decoration:none;
+        }
+    }
+  }
+  .about-company{
+    i{font-size: 25px;}
+    a{
+      color:white;
+      transition: color .2s;
+      &:hover{color:#4180CB}
+    }
+  }
+  .location{
+    i{font-size: 18px;}
+  }
+  .copyright p{border-top:1px solid rgba(255,255,255,.1);}
+}
+#topSection {
+  background-size: cover;
+  background-position: center;
+}
+.content img{
+  width: 100%;
+}
